@@ -6,7 +6,7 @@ In this project I practiced basic HTML elements and how to apply WAI-ARIA to the
 
 ## Link to the project
 
-Checkout the project **[here]**( ).
+Checkout the project **[here](https://maritaifemeni.github.io/Front_End/)**.
 
 ---
 
@@ -27,10 +27,10 @@ Checkout the project **[here]**( ).
 ---
 ## Project structure
 
-´´´´
+```	bash
 .
 └── fs15_1-basic-html
     ├── README.md
     ├── index.html
     └── logo.png
-´´´´
+
