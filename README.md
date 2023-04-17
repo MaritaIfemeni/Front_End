@@ -6,7 +6,7 @@ In this project I practiced basic HTML elements and how to apply WAI-ARIA to the
 
 ## Link to the project
 
-Checkout the project **[here](https://maritaifemeni.github.io/Front_End/)**.
+Checkout the project from **[here](https://maritaifemeni.github.io/Front_End/)**.
 
 ---
 
