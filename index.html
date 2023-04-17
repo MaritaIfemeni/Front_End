@@ -8,9 +8,9 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <a href="#info">This Is Me</a>
+    <header role="header" aria-label="Header">
+      <nav role="navigation" aria-label="Navigation">
+        <a href="#info" role="link" aria-label="Info">This Is Me</a>
         <a href="#bakcground">Backgroud</a>
         <a href="#skills">Technical Skills</a>
         <a href="#projects">Projects</a>
@@ -26,9 +26,10 @@
     </header>
 
     <main>
-      <section id="bakcground">
-        <h2>My Backgroud</h2>
-        <p>I have background from health care and I love sport!</p>
+      <section id="bakcground" role="region" aria-label="My background">
+        <h2 aria-describedby="background-description">My Background</h2>
+        <p id="background-description">This section provides information about my background.</p>
+        <p>I have a previous degree and years of working experiense form dental care and I love sports!</p>
         <table>
           <caption>
             <h3>Places I have lived</h3>
@@ -57,10 +58,6 @@
               <td>United Kingdom</td>
             </tr>
             <tr>
-              <td>London</td>
-              <td>United Kingdom</td>
-            </tr>
-            <tr>
               <td>Kent</td>
               <td>United Kingdom</td>
             </tr>
@@ -73,17 +70,17 @@
         <hr />
       </section>
 
-      <section id="skills">
+      <section id="skills" role="region" aria-label="Technical Skills">
         <h2>Technical Skills</h2>
         <ol>
-          <li>
+          <li role="listitem">
             Frameworks
             <ul>
               <li>React</li>
               <li>Django</li>
             </ul>
           </li>
-          <li>
+          <li role="listitem">
             Programmin languages
             <ul>
               <li>JavaScrips</li>
@@ -91,7 +88,7 @@
               <li>C#</li>
             </ul>
           </li>
-          <li>
+          <li role="listitem">
             Operating systems
             <ul>
               <li>Linux</li>
@@ -103,15 +100,22 @@
         <hr />
       </section>
 
-      <section id="projects">
+      <section id="projects" role="region" aria-label="Projects">
         <h2>Projects</h2>
         <p>
-          Find my portfoli from
-          <a href="https://maritaifemeni.github.io/MaritaIfemeni/">here</a>
+          Find my portfolio from
+          <a
+            href="https://maritaifemeni.github.io/MaritaIfemeni/"
+            role="link"
+            aria-label="Link to Marita Ifemeni's portfolio"
+            >here</a
+          >
         </p>
         <p>You can also see below video done by me for some school project</p>
 
         <iframe
+          role="video"
+          aria-label="Video made by Marita"
           width="420"
           height="345"
           src="https://www.youtube.com/embed/m3-u436vyVU"
@@ -120,7 +124,7 @@
         <hr />
       </section>
 
-      <section>
+      <section id="message" role="region" aria-label="Send a message">
         <form role="form" aria-labelledby="form-label">
           <h2 id="form-label">Send me a message</h2>
           <label for="name">Name:</label>
@@ -176,8 +180,21 @@
           </label>
           <button type="submit" aria-label="Submit">Submit</button>
         </form>
+        <hr />
       </section>
     </main>
-    <footer></footer>
+    <footer id="footer" role="footer" aria-label="My contact details">
+      <h3>Contact me</h3>
+      <address role="contentinfo" aria-label="Address">
+        <p>Happy Coding Land, 07070 Hacktown</p>
+      </address>
+
+      <phone role="contentinfo" aria-label="Phone number">
+        <p>123-456-7890</p></phone
+      >
+      <email role="contentinfo" aria-label="email"
+        ><p>marita@marita.com</p></email
+      >
+    </footer>
   </body>
 </html>
