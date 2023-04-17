@@ -121,8 +121,61 @@
       </section>
 
       <section>
-        <h2>Send a message using form below</h2>
-
+        <form role="form" aria-labelledby="form-label">
+          <h2 id="form-label">Send me a message</h2>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            aria-required="true"
+            aria-describedby="name-error"
+          />
+          <div
+            id="name-error"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            style="display: none"
+          >
+            Please enter your name.
+          </div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            aria-required="true"
+            aria-describedby="email-error"
+          />
+          <div
+            id="email-error"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            style="display: none"
+          >
+            Please enter a valid email address.
+          </div>
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            aria-required="true"
+            aria-describedby="message-error"
+          ></textarea>
+          <div
+            id="message-error"
+            role="alert"
+            aria-live="assertive"
+            aria-atomic="true"
+            style="display: none"
+          >
+            Please enter a message.
+          </div>
+          <label>
+            <input type="checkbox" id="reply" aria-checked="false" /> Check this
+            box if you want to receive a reply
+          </label>
+          <button type="submit" aria-label="Submit">Submit</button>
+        </form>
       </section>
     </main>
     <footer></footer>
