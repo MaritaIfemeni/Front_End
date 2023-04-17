@@ -1,18 +1,36 @@
 # Introduction to basic HTML
 
-Practice Git CLI, basic HTML elements and build short introduction about yourself.
+In this project I practiced basic HTML elements and how to apply WAI-ARIA to them.
 
-## Requirement
+---
 
-Edit the codes in `index.html` and create a webpage to introduce yourself similar to
-[this sample](https://integrify-finland.github.io/bof-introduction-sample/)
+## Link to the project
 
-1. Make use of different tags: headings, paragraphs, link, italic, ordered list, unordered list,table, form
-2. Check out more tags that might be helpful: address, section, article, audio
-3. Make sure you do not leave unnecessary while space in your codes
-Styling is not needed for this assignment
-4. Deploy your code base into any hosting platform of your choice. Rewrite README file to describe your project with few more details.
+Checkout the project **[here]**( ).
 
-## Result
-Please add also link to your deployment
-![README example](readme-example.png)
+---
+
+## Table of content
+
+1. This is me
+2. My Background
+3. Technical skills
+4. Projects
+5. Send me a message
+6. Contact
+
+---
+## Technologies
+
+- HTML5
+
+---
+## Project structure
+
+´´´´
+.
+└── fs15_1-basic-html
+    ├── README.md
+    ├── index.html
+    └── logo.png
+´´´´
